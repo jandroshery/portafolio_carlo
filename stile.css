@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+.foto {width: 200px;}
+.proyecto1 {width: 200px;}
+.proyecto2 {width: 200px;}
+.proyecto3 {width: 180px;}
+
+.navbar {
+    transition: background-color 0.3s;
+}
+
+.jumbotron {
+    background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+    color: white;
+    padding: 4rem 2rem;
+}
+
+.animated-name {
+    animation: nameAnimation 2s infinite;
+}
+
+@keyframes nameAnimation {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.project-card, .experience-card {
+    border: 2px solid #ddd;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover, .experience-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .navbar {
+    background-color: #444;
+}
+
+.dark-mode .jumbotron {
+    background: linear-gradient(135deg, #333 0%, #444 100%);
+}
+
+.dark-mode .card {
+    background-color: #444;
+    border-color: #555;
+}
+
+.dark-mode .text-dark {
+    color: #fff !important;
+}
